@@ -19,6 +19,7 @@ namespace ConsoleApp1.Services
             _booksDataService = new BooksDataService();
             _libraryServiceXMLAdapter = new LibraryServiceAdapter();
         }
+
         public List<Books> GetBooks()
         {
             var requestData = XElement.Parse(_booksDataService.GetBooksXML());
